@@ -3,7 +3,7 @@
 
 
 ## Instation
-cd ./third_party/cython
+cd ./third_party/cython\\
 python setup.py install
 cd ../../
 cd ./cython_function
