@@ -28,7 +28,9 @@ CUDA_VISIBLE_DEVICES=0  python -m torch.distributed.launch --nproc_per_node=1 tr
 ## Notice for CVPPP
 This was officially confirmed by the authors of the dataset.
 
-In the second half of 2021, the calculation of the SBD indicator has corrected for the bug that he SBD metric on the leaderboard site was higher than the `bestDice' metric. The calculation method is corrected
+In the second half of 2021, the calculation of the SBD indicator has corrected for the bug that he SBD metric on the leaderboard site was higher than the `bestDice' metric. 
+
+The calculation method is corrected
 
 from
 ```shell
