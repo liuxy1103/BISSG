@@ -41,10 +41,10 @@ to
 SBD = np.amin([bestDice,bestDice0])
 ```
 Therefore, for a fair comparison, we use the `bestDice' result from the site https://competition.codalab.org as our results in Table 3.
-<!-- 
+
 Meanwhile, our best result has been update in the leaderboard, as shown in the follows:
 
-![image](https://user-images.githubusercontent.com/54794058/168408336-22a147db-a7dd-4395-99b1-37c547e82d5a.png) -->
+![image](https://user-images.githubusercontent.com/54794058/168408336-22a147db-a7dd-4395-99b1-37c547e82d5a.png)
 
 ## Contact
 
