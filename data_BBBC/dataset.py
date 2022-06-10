@@ -117,12 +117,7 @@ class BBBC(Dataset):
             self.id_img = [x[:-5] for x in f_txt.readlines()]  # remove .png and \n
             f_txt.close()
         elif self.mode == "validation":
-            # f_txt = open(os.path.join(self.dir_meta, 'validation.txt'), 'r')
-            # valid_set = [x[:-5] for x in f_txt.readlines()]  # remove .png and \n
-            # f_txt.close()
-
-            # use test set as valid set directly
-            f_txt = open(os.path.join(self.dir_meta, 'test.txt'), 'r')
+            f_txt = open(os.path.join(self.dir_meta, 'validation.txt'), 'r')
             self.id_img = [x[:-5] for x in f_txt.readlines()]  # remove .png and \n
             f_txt.close()
         elif self.mode == "test":
