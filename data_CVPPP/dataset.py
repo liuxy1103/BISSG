@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-# @Time    : 2020/5/16 12:50
-# @Author  : Bo Hu
-# @Email   : hubosist@mail.ustc.edu.cn
-# @Software: PyCharm
+
 import os
 import torch
 import numpy as np
@@ -136,9 +132,11 @@ class CVPPP(Dataset):
             fg = Image.open(os.path.join(self.dir, self.id_fg[id]))
             seed = np.random.randint(2147483647)
             random.seed(seed)
+            torch.manual_seed(seed)
             data = self.transform(data)
 
             random.seed(seed)
+            torch.manual_seed(seed)
             label = self.target_transform(label)
 
             random.seed(seed)
