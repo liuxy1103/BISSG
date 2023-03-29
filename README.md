@@ -28,7 +28,7 @@ CUDA_VISIBLE_DEVICES=0  python -m torch.distributed.launch --nproc_per_node=1 tr
 ## Notice for CVPPP
 This was officially confirmed by the authors of the dataset.
 
-In the second half of 2021, the calculation of the SBD metric has been corrected for the bug that the SBD metric on the leaderboard site was higher than the `bestDice' metric. 
+In the second half of 2021, the calculation of the SBD metric has been corrected for the bug that the SBD metric on the leaderboard site was higher than the `bestDice' metric. The previous SBD calculation on the website had a bug and it has been corrected recently https://codalab.lisn.upsaclay.fr/competitions/8970
 
 The calculation method is corrected
 
@@ -40,7 +40,7 @@ to
 ```shell
 SBD = np.amin([bestDice,bestDice0])
 ```
-Therefore, for a fair comparison, we use the `bestDice' result from the site https://competition.codalab.org as our results in Table 3.
+Therefore, for a fair comparison, we use the previous result from the site https://competition.codalab.org as our results in Table 3.
 
 Meanwhile, our best result has been updated on the leaderboard, as shown in the follows:
 
