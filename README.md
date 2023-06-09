@@ -50,3 +50,12 @@ Meanwhile, our best result has been updated on the leaderboard, as shown in the 
 
 If you have any problem with the released code, please contact me by email (liuxyu@mail.ustc.edu.cn).
 
+## Citation
+```shell
+@inproceedings{liu2022biological,
+  title={Biological instance segmentation with a superpixel-guided graph},
+  author={Liu, Xiaoyu and Huang, Wei and Zhang, Yueyi and Xiong, Zhiwei},
+  year={2022},
+  organization={IJCAI}
+}
+```
